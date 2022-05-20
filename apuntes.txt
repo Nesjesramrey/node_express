@@ -1,0 +1,71 @@
+Creamos .editorconfig .eslinttrc.json
+
+
+npm i nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier -D //instalacion en terminal despues de configuracion
+
+npm run dev // vemos que se corrar nodemon
+
+npm run star // para produccion en modo plano
+
+
+
+REST: Representational State Transfer
+Es una conveccion que se refiere a servicios web por protocolo HTTP
+
+Metodos:
+
+Get: Obtener
+Put: Modificar/Actualizar
+Patch: Modificar/Actualizar
+Post: Crear
+Delete: Eliminar
+Patch
+El método de solicitud HTTP PATCH aplica modificaciones parciales a un recurso.
+
+PATCH es algo análogo al concepto de “actualización” que se encuentra en CRUD, Una solicitud se considera un conjunto de instrucciones
+sobre cómo modificar un recurso. Contrasta esto con PUT; que es una representación completa de un recurso.PATCH
+
+Mo es necesariamente idempotente, aunque puede serlo. Contrasta esto con PUT; que siempre es idempotente.
+
+La palabra “idempotente” significa que cualquier número de solicitudes repetidas e idénticas dejará el recurso en el mismo estado.
+
+Por ejemplo, si un campo de contador de incremento automático es una parte integral del recurso, entonces un PUT lo sobrescribirá naturalmente
+(ya que sobrescribe todo), pero no necesariamente para .PATCH
+
+PATCH (como POST) puede tener efectos secundarios sobre otros recursos.
+
+PATCH - HTTP | MDN
+
+Anatomía de un URL
+Dependiendo del diseño que se desea adoptar, una URL se compone de lo siguientes elementos:
+Protocolo - Define el medio con el cual se comunicarán los aplicativos (SMTP, FTP, SSH, etc), en el caso web HTTP o HTTPS.
+Host - Conocido como el nombre del dominio que define un nombre identificativo de nuestro servidor web; en localhost definimos como scope de la máquina en tema.
+Protocolo - Definiendo el acceso de comunicación que generalmente se relaciona con el protocolo Http(8080) o Https(443).
+Endpoint - Definiendo la ruta de acceso a la información la cual puede definirse como:
+Contexto - Definición raíz de la API REST
+Versión - (Opcional) Etiqueta
+Recurso - (Opcional) Modelo de información
+Parámetro - (Opcional) Selección índice o pivote
+Query - (Opcional) Solicitud iterativo
+.
+
+OpenAPI
+📚 Documentación
+.
+Como la documentación lo indica, es una especificación que define un formato de descripción para APIs REST. Con ella, podemos diseñar, mediante documentación, su definición y comportamiento, ya sea con formato JSON, YAML(YML) o Raml.
+Existen diferentes plataformas que emplean su descripción, como OpenSource o privado, que entregan diferentes posibilidades a la hora de empezar y escalar los proyectos de software.
+.
+Algunos ejemplos son:
+
+Swagger Link
+Readme Link
+Raml Link
+Postman Link
+.
+Un ejemplo sería el siguiente Gist ⚡️
+
+
+Para los que como yo, no sabíamos que es endpoints la palabra que tanto utiliza el profe:
+
+Los endpoints son las URLs de un API o un backend que responden a una petición. Los mismos entrypoints tienen que calzar con un endpoint para existir.
+Algo debe responder para que se renderice un sitio con sentido para el visitante.
